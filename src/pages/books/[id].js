@@ -25,16 +25,16 @@ const BookDetail = () => {
   }, [id]);
 
   if (!book) {
-    return <span className="loading loading-dots loading-lg"></span>
+    return <span className="loading loading-dots loading-lg"></span>;
   }
 
   return (
     <div className="overflow-x-auto">
-      <table className="table">
+      <table className="table w-full">
         {/* head */}
-        <thead>
+        <thead className="text-black">
           <tr>
-            <th></th>
+            <th className=" hidden sm:table-cell"></th>
             <th>Title</th>
             <th>ISBN</th>
             <th>PageCount</th>
@@ -44,7 +44,7 @@ const BookDetail = () => {
         <tbody>
           {/* row */}
           <tr>
-            <th>{book.id}</th>
+            <th className="hidden sm:table-cell">{book.id}</th>
             <td>{book.title}</td>
             <td>{book.isbn}</td>
             <td>{book.pageCount}</td>

@@ -11,27 +11,12 @@ const home= ()=> {
 export default home;
 
 
-<div className="overflow-x-auto">
-  <table className="table">
-    {/* head */}
-    <thead>
-      <tr>
-        <th></th>
-        <th>Title</th>
-        <th>ISBN</th>
-        <th>PageCount</th>
-        <th>Authors</th>
-      </tr>
-    </thead>
-    <tbody>
-      {/* row 1 */}
-      <tr>
-        <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
-      </tr>
-      
-    </tbody>
-  </table>
+<div className="card w-96 glass">
+  <figure><img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
+  <div className="card-body">
+    <h2 className="card-title">Life hack</h2>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
 </div>

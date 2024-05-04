@@ -57,7 +57,7 @@ const BooksPage = ({ books }) => {
           <thead>
             <tr>
               <th></th>
-              <th>Books Title</th>
+              <th className="text-black text-xl">Books Title</th>
             </tr>
           </thead>
           <tbody>
