@@ -29,12 +29,29 @@ const BookDetail = () => {
   }
 
   return (
-    <div>
-      <h1>Book Details</h1>
-      <div>Title: {book.title}</div>
-      <div>ISBN: {book.isbn}</div>
-      <div>PageCount: {book.pageCount}</div>
-      <div>Authors: {book.authors.join(', ')}</div>
+    <div className="overflow-x-auto">
+      <table className="table">
+        {/* head */}
+        <thead>
+          <tr>
+            <th></th>
+            <th>Title</th>
+            <th>ISBN</th>
+            <th>PageCount</th>
+            <th>Authors</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* row */}
+          <tr>
+            <th>{book.id}</th>
+            <td>{book.title}</td>
+            <td>{book.isbn}</td>
+            <td>{book.pageCount}</td>
+            <td>{book.authors.join(', ')}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 };

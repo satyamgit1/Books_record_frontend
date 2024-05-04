@@ -52,13 +52,12 @@ import Link from 'next/link';
 const BooksPage = ({ books }) => {
   return (
     <div>
-      <h1>Books</h1>
       <div className="overflow-x-auto">
         <table className="table">
           <thead>
             <tr>
               <th></th>
-              <th>Name</th>
+              <th>Books Title</th>
             </tr>
           </thead>
           <tbody>
@@ -66,7 +65,7 @@ const BooksPage = ({ books }) => {
               <tr key={book.id} className={index % 2 === 0 ? 'bg-base-200' : ''}>
                 <th>{index + 1}</th>
                 <td>
-                  <Link href={`/books/${book.id}`}>
+                  <Link href={`/books/${book.id}`} className='link link-primary'>
                     {book.title}
                   </Link>
                 </td>
